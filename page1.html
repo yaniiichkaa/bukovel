@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Bukovel</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" type="image/x-icon" href="icons/icon.ico"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+</head> 
+<body> 
+    <!--Навігаційна панель--> 
+    <div class="navigation"> 
+        <img src="imeges/завантаження 1.png" alt="Logo Image" id="logo"> 
+        <ul data-lang="uk"> 
+            <li><a href="page2.html">ЗИМА</a></li> 
+            <li><a href="page3.html">ЛІТО</a></li> 
+            <li><a href="page4.html">СКІ-ПАСИ</a></li> 
+            <li><a href="#">ГОТЕЛІ</a></li>  
+            <li><a href="page5.html">АКЦІЇ</a></li> 
+            <li><a href="#">ДОЗВІЛЛЯ <span>BUKOVEL</span></a></li> 
+        </ul>
+
+        <ul style="display: none;" data-lang="en"> 
+            <li><a href="page2.html">WINTER</a></li> 
+            <li><a href="page3.html">SUMMER</a></li> 
+            <li><a href="page4.html">SKI-PASS</a></li> 
+            <li><a href="#">HOTEL</a></li>  
+            <li><a href="page5.html">SPECIALS</a></li> 
+            <li><a href="#"><a>RECREATION</a></li> 
+        </ul> 
+        <button id="changeLanguage">UA</button>   
+    </div> 
+
+    <div class="head" data-lang="uk"> 
+        <h1>Готель в ТК "Буковель"</h1> 
+        <p>Ваш пошук</p> 
+    </div> 
+
+    <div class="head" style="display: none;" data-lang="en"> 
+        <h1>Hotel in TC "Bukovel"</h1> 
+        <p>Your search</p> 
+    </div> 
+
+    <div class="application" data-lang="uk"> 
+        <div class="block"> 
+            <label id="h">Заїзд</label> 
+            <label id="p">Дата заїзду</label> 
+            <input type="date" name="come-in"> 
+        </div> 
+        <div class="block"> 
+            <label>Виїзд</label> 
+            <label>Дата виїзду</label> 
+            <input type="date" name="come-out"> 
+        </div> 
+        <div class="block"> 
+            <label>Гості</label> 
+            <input type="text" name="adult-guests" placeholder="Дорослі"> 
+            <input type="text" name="child-guests" placeholder="Діти"> 
+        </div> 
+        <button type="submit">ЗАСТОСУВАТИ</button> 
+    </div> 
+
+
+    <div class="application" style="display: none;" data-lang="en"> 
+        <div class="block"> 
+            <label id="h">Check-in</label> 
+            <label id="p">Check-in date</label> 
+            <input type="date" name="come-in"> 
+        </div> 
+        <div class="block"> 
+            <label>Check-out</label> 
+            <label><Check-out></Check-out> date</label> 
+            <input type="date" name="come-out"> 
+        </div> 
+        <div class="block"> 
+            <label>Visitor</label> 
+            <input type="text" name="adult-guests" placeholder="Adults"> 
+            <input type="text" name="child-guests" placeholder="Childrens"> 
+        </div> 
+        <button type="submit">APPLY</button> 
+    </div> 
+
+
+
+    <div class="main-content" data-lang="uk"> 
+        <div class="filters"> 
+            <div class="map"> 
+                <p>Готелі в ТК "Буковель"</p> 
+                <a href="https://www.google.com/maps/search/%D0%B1%D1%83%D0%BA%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C+%D0%BA%D0%B0%D1%80%D1%82%D0%B8/@48.3632251,24.3553154,13z/data=!3m1!4b1?entry=ttu" target="_blank">Дивитись на карті</a> 
+            </div> 
+            <div class="price"> 
+                <h2>ФІЛЬТРИ</h2> 
+                <p id="sum">ціна за <span id="night">0</span> ніч <span id="adult">0</span> дорослих</p> 
+                <input type="text" id="price-start" value="0"> 
+                <input type="text" id="price-end" value="0"> 
+            </div> 
+            <div class="distance"> 
+                <h3>ВІДСТАНЬ ДО ВИТЯГІВ</h3> 
+                <input type="checkbox" id="check1"> <span>0-100<br></span> 
+                <input type="checkbox" id="check2"> <span>100-200<br></span> 
+                <input type="checkbox" id="check3"> <span>200-500</span> 
+            </div> 
+            <div class="eat"> 
+                <h3>ХАРЧУВАННЯ</h3> 
+                <input type="checkbox" id="check4"> <span>без харчування - із предоплатою<br></span> 
+                <input type="checkbox" id="check5"> <span>із сніданком<br></span> 
+                <input type="checkbox" id="check6"> <span>напівпансіон<br></span> 
+                <input type="checkbox" id="check7"> <span>із сніданком <span id="vip">+VIP-</span>прохід<br></span> 
+                <input type="checkbox" id="check8"> <span>без харчування<br></span> 
+                <input type="checkbox" id="check9"> <span>із сніданком <span id="vip">+SPA</span><br></span> 
+                <input type="checkbox" id="check10"> <span>із сніданком та без предоплати</span> 
+            </div> 
+        </div> 
+
+        <div class="main"> 
+            <div class="bukovel-hotel">
+                <p id="hotel"><span id="">3</span> <img src="imeges/Vector 10.png" alt="" width="22px" height="22px">поруч із витягом</p>
+                <p id="deleted-price"><del>3 600$</del></p>
+                <p id="actual-price">2 160$</p>
+                <p id="param">Ціна за 1 ніч 2 дорослих</p>
+                <h1>Bukovel Hotel</h1>
+                <h2>Економ двомісний , VIP прохід + сніданок + SPA
+                    24 людини переглядають зараз цей готель</h2>
+                <button type="submit">ВИБРАТИ НОМЕР</button>    
+
+            </div>
+
+            <div class="bukovel-hotel2">
+                <p id="hotel"><span id="">3</span> <img src="imeges/Vector 10.png" alt="" width="22px" height="22px">поруч із витягом</p>
+                <p id="deleted-price"><del>3 600$</del></p>
+                <p id="actual-price">2 160$</p>
+                <p id="param">Ціна за 1 ніч 2 дорослих</p>
+                <h1>Bukovel Hotel</h1>
+                <h2>Апартаменти тип 3 , VIP прохід + сніданок + SPA
+                    6 людей переглядають зараз цей готель</h2>
+                <button type="submit">ВИБРАТИ НОМЕР</button>    
+
+            </div>
+
+            <div class="bukovel-hotel3">
+                <p id="hotel"><span id="">3</span> <img src="imeges/Vector 10.png" alt="" width="22px" height="22px">поруч із витягом</p>
+                <p id="deleted-price"><del>3 600$</del></p>
+                <p id="actual-price">2 160$</p>
+                <p id="param">Ціна за 1 ніч 2 дорослих</p>
+                <h1>Bukovel Hotel</h1>
+                <h2>Двомісний напівлюкс 2 категорія , VIP прохід + сніданок 
+                    + SPA <br> 2 людини переглядають зараз цей готель</h2>
+                <button type="submit">ВИБРАТИ НОМЕР</button>    
+
+            </div>
+        </div> 
+    </div> 
+
+
+
+
+
+
+
+    <div class="main-content" style="display: none;" data-lang="en"> 
+        <div class="filters"> 
+            <div class="map"> 
+               
+                <p>Hotels in TC "Bukovel"</p> 
+                <a href="https://www.google.com/maps/search/%D0%B1%D1%83%D0%BA%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C+%D0%BA%D0%B0%D1%80%D1%82%D0%B8/@48.3632251,24.3553154,13z/data=!3m1!4b1?entry=ttu" target="_blank">Дивитись на карті</a> 
+            </div> 
+            <div class="price"> 
+                <h2>FILTERS</h2> 
+                <p id="sum">price for <span id="night">0</span> night <span id="adult">0</span> adults</p> 
+                <input type="text" id="price-start" value="0"> 
+                <input type="text" id="price-end" value="0"> 
+            </div> 
+            <div class="distance"> 
+                <h3>DISTANCE TO EXHAUSTS</h3> 
+                <input type="checkbox" id="check1"> <span>0-100<br></span> 
+                <input type="checkbox" id="check2"> <span>100-200<br></span> 
+                <input type="checkbox" id="check3"> <span>200-500</span> 
+            </div> 
+            <div class="eat"> 
+                <h3>FOOD</h3> 
+                <input type="checkbox" id="check4"> <span>without food - with advance payment<br></span> 
+                <input type="checkbox" id="check5"> <span>with breakfast<br></span> 
+                <input type="checkbox" id="check6"> <span>half board<br></span> 
+                <input type="checkbox" id="check7"> <span>with breakfast <span id="vip">+VIP-</span>pass<br></span> 
+                <input type="checkbox" id="check8"> <span>without food<br></span> 
+                <input type="checkbox" id="check9"> <span>with breakfast <span id="vip">+SPA</span><br></span> 
+                <input type="checkbox" id="check10"> <span>with breakfast and without prepayment</span> 
+            </div> 
+        </div> 
+
+        <div class="main"> 
+            <div class="bukovel-hotel">
+                <p id="hotel"><span id="">3</span> <img src="imeges/Vector 10.png" alt="" width="22px" height="22px">next to the exit</p>
+                <p id="deleted-price"><del>3 600$</del></p>
+                <p id="actual-price">2 160$</p>
+                <p id="param">Price for 1 night for 2 adults</p>
+                <h1>Bukovel Hotel</h1>
+                <h2>Economy double, VIP passage + breakfast + SPA
+                    24 people are currently viewing this hotel</h2>
+                <button type="submit">CHOOSE A ROOM</button>    
+
+            </div>
+
+            <div class="bukovel-hotel2">
+                <p id="hotel"><span id="">3</span> <img src="imeges/Vector 10.png" alt="" width="22px" height="22px">next to the exit</p>
+                <p id="deleted-price"><del>3 600$</del></p>
+                <p id="actual-price">2 160$</p>
+                <p id="param">Price for 1 night for 2 adults</p>
+                <h1>Bukovel Hotel</h1>
+                <h2>Apartment type 3, VIP access + breakfast + SPA
+                    6 people are currently viewing this hotel</h2>
+                <button type="submit">CHOOSE A ROOM</button>    
+
+            </div>
+
+            <div class="bukovel-hotel3">
+                <p id="hotel"><span id="">3</span> <img src="imeges/Vector 10.png" alt="" width="22px" height="22px">next to the exit</p>
+                <p id="deleted-price"><del>3 600$</del></p>
+                <p id="actual-price">2 160$</p>
+                <p id="param">Price for 1 night for 2 adults</p>
+                <h1>Bukovel Hotel</h1>
+                <h2>Double junior suite category 2, VIP access + breakfast 
+                    + SPA <br> 2 people are viewing this hotel now</h2>
+                <button type="submit">CHOOSE A ROOM</button>    
+
+            </div>
+        </div> 
+    </div> 
+    <script src="scripts/scripts.js"></script> 
+</body> 
+</html>

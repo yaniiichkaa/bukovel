@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зима у Буковелі</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!--Навігаційна панель-->
+     <div class="navigation">
+        <a href="page1.html"><img src="imeges/logo-winter.png" alt="Logo Image" id="logo"></a>
+        <ul data-lang="uk">
+            <li><a href="page2.html">ЗИМА</a></li>
+            <li><a href="page3.html">ЛІТО</a></li>
+            <li><a href="page4.html">СКІ-ПАСИ</a></li>
+            <li><a href="page1.html">ГОТЕЛІ</a></li> 
+            <li><a href="page5.html">АКЦІЇ</a></li>
+            <li><a href="#">ДОЗВІЛЛЯ <span>BUKOVEL</span></a></li>
+        </ul>
+        <ul style="display: none;" data-lang="en"> 
+            <li><a href="page2.html">WINTER</a></li> 
+            <li><a href="page3.html">SUMMER</a></li> 
+            <li><a href="page4.html">SKI-PASS</a></li> 
+            <li><a href="page1.html">HOTEL</a></li>  
+            <li><a href="page5.html">SPECIALS</a></li> 
+            <li><a href="#"><a>RECREATION</a></li> 
+        </ul> 
+        <button id="changeLanguage">UA</button>  
+    </div>
+    <h1 data-lang="uk">Зима в Буковелі</h1>
+    <div class="winter" style="display: none;" data-lang="en">
+        <div class="list">
+            <h2>ГІРСЬКОЛИЖНЕ КАТАННЯ</h2>
+            <ul id="lists">
+                <li id="list"><a href="#">Скі-паси</a></li>
+                <li id="list"><a href="#">Готелі</a></li>
+                <li id="list"><a href="#">Лижна школа</a></li>
+            </ul>
+        </div>
+        <div class="list">
+            <h2>ЗИМОВІ РОЗВАГИ</h2>
+            <ul id="lists">
+                <li id="list"><a href="#" id="voda">VODA club</a></li>
+                <li id="list"><a href="#">Ресторани та клуби</a></li>
+                <li id="list"><a href="#">Туристичний центр Буковель</a></li>
+            </ul>
+        </div>
+    </div>
+    <p id="social" data-lang="uk">Ми в соцмережах</p>
+    <div class="icons">
+        <a href="#"><img src="imeges/фейсбук.png" alt="Facebook"></a>
+        <a href="#"><img src="imeges/inst.png" alt="Instagram"></a>
+        <a href="#"><img src="imeges/telegram.png" alt="Telegram"></a>
+    </div>
+
+    <h1 style="display: none;" data-lang="en">Discover winter</h1>
+    <div class="winter" style="display: none;" data-lang="en">
+        <div class="list">
+            <h2>MOUNTAIN SKIING</h2>
+            <ul id="lists">
+                <li id="list"><a href="#">Ski-pases</a></li>
+                <li id="list"><a href="#">Hotel</a></li>
+                <li id="list"><a href="#">Ski school</a></li>
+            </ul>
+        </div>
+        <div class="list">
+            <h2>ALPINE SKIING</h2>
+            <ul id="lists">
+                <li id="list"><a href="#" id="voda">VODA club</a></li>
+                <li id="list"><a href="#">Restaurants and clubs</a></li>
+                <li id="list"><a href="#">Bukovel tourist center</a></li>
+            </ul>
+        </div>
+    </div>
+    <p id="social" style="display: none;" data-lang="en">We are on social networks</p>
+    <div class="icons">
+        <a href="#"><img src="imeges/фейсбук.png" alt="Facebook"></a>
+        <a href="#"><img src="imeges/inst.png" alt="Instagram"></a>
+        <a href="#"><img src="imeges/telegram.png" alt="Telegram"></a>
+    </div>
+
+
+    
+    <script src="scripts/scripts.js"></script> 
+</body>
+</html>
